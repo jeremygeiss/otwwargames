@@ -1,0 +1,43 @@
+#+TITLE: OTW Wargames
+- copy the password from this file
+  in normal mode: y i w
+- paste the password Ctrl-Shift-v
+
+* Bandit
+** Level 0
+- password for level 1
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+** level 1
+- the password is in the file called -
+- to get the contents run:
+$ cat < -
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+** level 2
+- spaces in a file name
+- tab completion
+- trying to teach escape characters
+
+  $ cat <tab>
+  $ cat spaces\ in\ this\ filename
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+** level 3
+- open the hidden file inside the directory
+ $ cd inhere
+ $ ls -al
+ $ cat .hidden
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+** level 4
+- cd inhere
+- make a list of the files in the temp directory
+  $ mktemp -d
+  $ ls > /tmp/tmp.rkRZuxAeUB/list
+- run the file comannd on the list to determine the human readable files
+  ~/inhere$ file -f /tmp/tmp.rkRZuxAeUB/list
+  koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+** level 5
+- filter the file system for human-readable, 1033 bytes, and non-executable
+  $ du -ab | grep 1033
+  DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+** level 6
+du -ab | grep 33
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
